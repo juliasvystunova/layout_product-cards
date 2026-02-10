@@ -33,7 +33,7 @@
     @include content-margin-inline;
   }
 
-  &__rewiews {
+  &__reviews {
     margin-top: 16px;
     display: flex;
     align-items: center;
@@ -67,25 +67,30 @@
   }
 
   &__button {
+    display: flex;
     margin: 16px;
-    height: 40px;
-    width: 166px;
-    border: none;
-    border-radius: 5px;
-    background-color: $button-color;
-    color: $card-background-color;
-    font-size: 14px;
-    line-height: 16px;
-    font-weight: 700;
-    text-align: center;
-    text-transform: uppercase;
 
+    justify-content: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: $card-background-color;
+    background-color: $button-color;
+    border-radius: 5px;
+    width: 166px;
+    height: 40px;
     cursor: pointer;
+    line-height: 40px;
+    font-size: 14px;
+
+    font-weight: 700;
+
+    
 
     &:hover {
       box-sizing: border-box;
-      border: 1px solid $button-color;
+
       background-color: $card-background-color;
+      border: 1px solid $button-color;
       color: $button-color;
     }
   }
